@@ -3,6 +3,7 @@ package com.example.weathertracker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 public class WeatherTrackerApplication {
 
