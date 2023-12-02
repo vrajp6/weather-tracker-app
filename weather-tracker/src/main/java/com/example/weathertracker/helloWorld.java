@@ -12,6 +12,6 @@ public class helloWorld {
 
     @GetMapping("/")
     public String hello() {
-        return "Swap is dumb!";
+        return "Please add route!";
     }
 }

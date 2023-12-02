@@ -30,6 +30,9 @@ public class WeatherService {
         weatherObject.setHumidity(main.getDouble("humidity"));
         weatherObject.setWindSpeed(jsonObject.getJSONObject("wind").getDouble("speed"));
         weatherObject.setWeatherDescription(weather.getString("description"));
+        weatherObject.setWeatherIcon(weather.getString("icon"));
+
+
         return weatherObject;
         }
     }
