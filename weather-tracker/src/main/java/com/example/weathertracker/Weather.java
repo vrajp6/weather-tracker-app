@@ -9,8 +9,9 @@ public class Weather {
     private Double humidity;
     private Double windSpeed;
     private String weatherDescription;
+    private String weatherIcon;
 
-    public Weather(String city, String country, Double temperature, Double feelsLike, Double humidity, Double windSpeed, String weatherDescription) {
+    public Weather(String city, String country, Double temperature, Double feelsLike, Double humidity, Double windSpeed, String weatherDescription, String weatherIcon) {
         this.city = city;
         this.country = country;
         this.temperature = temperature;
@@ -18,6 +19,7 @@ public class Weather {
         this.humidity = humidity;
         this.windSpeed = windSpeed;
         this.weatherDescription = weatherDescription;
+        this.weatherIcon = weatherIcon;
     }
 
     public Weather() {
@@ -48,6 +50,10 @@ public class Weather {
     public String getWeatherDescription() {
         return weatherDescription;
     }
+    
+    public String getWeatherIcon() {
+        return weatherIcon;
+    }
 
     public void setCity(String city) { this.city = city; }
 
@@ -72,6 +78,11 @@ public class Weather {
     public void setWeatherDescription(String weatherDescription) {
         this.weatherDescription = weatherDescription;
     }
+    
+    
+    public void setWeatherIcon(String weatherIcon) {
+        this.weatherIcon = weatherIcon;
+    }
 
     @Override
     public String toString() {
@@ -83,6 +94,7 @@ public class Weather {
                 ", humidity='" + humidity + '\'' +
                 ", windSpeed='" + windSpeed + '\'' +
                 ", weatherDescription='" + weatherDescription + '\'' +
+                ", weatherIcon='" + weatherIcon + '\'' +
                 '}';
     }
     
